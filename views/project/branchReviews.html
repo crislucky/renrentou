@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分店点评</title>
+    <link href="../../css/reset.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <script src="../../lib/jquery-1.12.4.js"></script>
+    <script src="../../js/header.js"></script>
+</head>
+<body>
+<!--头部-->
+<div id="header">
+    <div class="inner clearFloat">
+        <h1 class="fl">
+            <a href="../../index.html"><img src="../../images/public/logo.jpg"></a>
+        </h1>
+        <ul class="fl">
+            <li><a href="../invest/itemlist.html"><img src="../../images/public/header_title1.jpg"></a></li>
+            <li><a href="../invest/investorsLists.html"><img src="../../images/public/header_title2.jpg"></a></li>
+            <li><a href="../home/guid.html" class="smallfont">新手指引</a></li>
+        </ul>
+        <div class="fr">
+            <div class="loginInfo">
+                <a id="login" href="#" class="personbg">登录</a>
+                <a href="../register/registrant.html">注册</a>
+            </div>
+            <div class="memberInfo">
+                <div class="detail clearFloat">
+                    <a href="javascript:;" class="openList">会员中心<i></i></a>
+                    <a href="javascript:;">消息<span>(155)</span></a>
+                    <a href="javascript:;" class="personIcon"><img src="../../images/home/personIcon.jpg" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="../personal/personal.html"><i class="icon-user"></i>个人主页</a></li>
+                    <li><a href="javascript:;"><i class="icon-edit"></i>提交融资店铺</a></li>
+                    <li><a href="javascript:;"><i class="icon-file-alt"></i>已提交的融资店铺</a></li>
+                    <li><a href="../issuance/one.html"><i class="icon-user-md"></i>投资人认证</a></li>
+                    <li><a href="javascript:;"><i class="icon-cog"></i>账号设置</a></li>
+                    <li><a href="javascript:;" class="quite"><i class="icon-off"></i>安全退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--弹窗-->
+    <div class="popup">
+        <h5>加入人人投，体验最酷的店铺投融资方式！<a id="close" href="javascript:;"><img src="../../images/home/error.png"></a></h5>
+        <div class="fl">
+            <label>
+                <img src="../../images/home/agent.png" alt="">
+                <input type="text" placeholder="输入用户名" id="userName" name="userName">
+            </label>
+            <label>
+                <img src="../../images/home/lock.png" alt="">
+                <input type="password" placeholder="输入密码"  id="password" name="password">
+                <a href="javascript:;"></a>
+            </label>
+            <input type="text" placeholder="输入验证码" id="infiCode" name="infiCode">
+            <img src="../../images/home/infinCode.png" alt="">
+            <span>刷新</span>
+            <a href="javascript:;" class="login">立即登录</a>
+            <p><a href="../register/forgetPassword.html">忘记密码?</a></p>
+        </div>
+        <div class="fr">
+            <i>没有账号？</i>
+            <i>欢迎注册加入我们！</i>
+            <a href="../register/registrant.html" id="quickRegister">快速注册</a>
+            <p>或者使用合作网站登录</p>
+            <div class="icons">
+                <a href=""><img src="../../images/home/qq.png" alt=""></a><a href=""><img src="../../images/home/guidSina.png"></a><a href=""><img src="../../images/home/good.png"></a>
+            </div>
+
+        </div>
+    </div>
+    <!--蒙版-->
+    <div class="shadow"></div>
+</div>
+
+
+<!--分店点评-->
+<div id="branchReviews">
+    <div class="inner overflowH">
+        <h2>分店</h2>
+        <div class="shopInfo clearFloat">
+            <div class="imgs">
+                <img src="../../images/project/branchReviews_ShopInfo.jpg" alt="">
+                <div>
+                    <a class="firtImg" href="javascript:;"><img src="../../images/project/branchReviews_ShopInfo1.jpg"
+                                                                alt=""></a>
+                    <a href="javascript:;"><img src="../../images/project/branchReviews_ShopInfo2.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="../../images/project/branchReviews_ShopInfo3.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="detail">
+                <h3><span>牛扒工厂</span>(<span>朝阳店</span>)
+                    <div><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i
+                            class="icon-star"></i><i class="icon-star"></i></div>
+                </h3>
+                <p>经过八年的努力经营，已在长安街、国贸有两家店铺。在装修风格上，不像一般连锁店有着完全统一的模式和色彩搭配
+                    ，牛扒工厂会根据店铺的地理位置、周围环境和大数据下的客流信息来装饰自己，让每个店铺都能够独具一格，深入环境
+                    、深入生活、深入人心。在菜品上，牛扒工厂，由美籍华裔青年实业家叶子诒于2006年4月在百子湾路后现代城，五十
+                    万元资金和十五名员工开始的西餐店。</p>
+                <a href=""><img src="../../images/project/branchReviews_addressIcon.png">我来过(523)</a>
+                <ul>
+                    <li>地址：朝阳区建国门外大街1号国贸商城NB203铺</li>
+                    <li>营业时间：9:00至24:00</li>
+                    <li>电话：010-85182186 010-85182189</li>
+                    <li>人均消费：120元 - 200元</li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav clearFloat">
+            <a class="active" href="javascript:;">点评</a>
+            <a href="javascript:;">店铺环境</a>
+            <a href="javascript:;">交通</a>
+            <a href="javascript:;">店铺分红</a>
+        </div>
+        <div class="tab clearFloat">
+            <div class="fl tabComment">
+                <ul>
+                    <li><span>总体评价：</span>
+                        <i class="icon-star-empty"></i>
+                        <i class="icon-star-empty"></i>
+                        <i class="icon-star-empty"></i>
+                        <i class="icon-star-empty"></i>
+                        <i class="icon-star-empty"></i>
+                        <img src="../../images/project/branchReviews_commentIcon.png" alt="">
+                    </li>
+                    <li><span>评价内容：</span><textarea name="" cols="30" rows="10"
+                                                    placeholder="您的评价对其他会员都是很重要的参考"></textarea></li>
+                    <li><span>人均消费：</span><input type="text">元</li>
+                    <li><span>人均消费：</span>
+                        <label for=""><input type="radio" checked>有车位</label>
+                        <label for=""><input type="radio">无车位</label>
+                    </li>
+                    <li><a href="">提交点评</a></li>
+                </ul>
+                <dl>
+                    <dt>
+                    <div class="commentNav">
+                        <a href="javascript:;" class="active">全部点评(<span>20</span>)</a>
+                        <a href="javascript:;">5星(<span>3</span>)</a>
+                        <a href="javascript:;">4星(<span>13</span>)</a>
+                        <a href="javascript:;">3星(<span>23</span>)</a>
+                        <a href="javascript:;">2星(<span>10</span>)</a>
+                        <a href="javascript:;">1星(<span>2</span>)</a>
+                    </div>
+                    </dt>
+                    <dd>
+                        <div class="commentDetail">
+                            <a href="javascript:;" class="headPortrait">
+                                <img src="../../images/project/branchReviews_commentPerson.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="name"><span>xiaoxiao</span></a>
+                            <img src="../../images/project/branchReviews_commentBadge.png" alt="">
+                        </div>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <p>上周去的，这周准备还过去，环境优雅让人沉静下来，菜式也很多，都是我喜欢吃
+                            的，嘿嘿 ，不过，红酒有点贵，这个让我很纠结！</p>
+                        <span>2014-03-30</span>
+                        <a href="">回应</a>
+                    </dd>
+                    <dd>
+                        <div class="commentDetail">
+                            <a href="javascript:;" class="headPortrait">
+                                <img src="../../images/project/branchReviews_commentPerson.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="name"><span>小二贝贝</span></a>
+                            <img src="../../images/project/branchReviews_commentBadge.png" alt="">
+                        </div>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <p>牛排不错，蘑菇汤也很不错，菠菜饭也不错，环境很好，只是觉得沙拉一般点</p>
+                        <span>2014-03-30</span>
+                        <a href="">回应</a>
+                    </dd>
+                    <dd>
+                        <div class="commentDetail">
+                            <a href="javascript:;" class="headPortrait">
+                                <img src="../../images/project/branchReviews_commentPerson.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="name"><span>xiaoxiao</span></a>
+                            <img src="../../images/project/branchReviews_commentBadge.png" alt="">
+                        </div>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <p>上周去的，这周准备还过去，环境优雅让人沉静下来，菜式也很多，都是我喜欢吃
+                            的，嘿嘿 ，不过，红酒有点贵，这个让我很纠结！</p>
+                        <span>2014-03-30</span>
+                        <a href="">回应</a>
+                    </dd>
+                    <dd>
+                        <div class="commentDetail">
+                            <a href="javascript:;" class="headPortrait">
+                                <img src="../../images/project/branchReviews_commentPerson.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="name"><span>xiaoxiao</span></a>
+                            <img src="../../images/project/branchReviews_commentBadge.png" alt="">
+                        </div>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <p>上周去的，这周准备还过去，环境优雅让人沉静下来，菜式也很多，都是我喜欢吃
+                            的，嘿嘿 ，不过，红酒有点贵，这个让我很纠结！</p>
+                        <span>2014-03-30</span>
+                        <a href="">回应</a>
+                    </dd>
+                    <dd>
+                        <div class="commentDetail">
+                            <a href="javascript:;" class="headPortrait">
+                                <img src="../../images/project/branchReviews_commentPerson.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="name"><span>xiaoxiao</span></a>
+                            <img src="../../images/project/branchReviews_commentBadge.png" alt="">
+                        </div>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <p>牛排不错，蘑菇汤也很不错，菠菜饭也不错，环境很好，只是觉得沙拉一般点</p>
+                        <span>2014-03-30</span>
+                        <a href="">回应</a>
+                    </dd>
+                    <dd>
+                        <div class="commentDetail">
+                            <a href="javascript:;" class="headPortrait">
+                                <img src="../../images/project/branchReviews_commentPerson.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="name"><span>xiaoxiao</span></a>
+                            <img src="../../images/project/branchReviews_commentBadge.png" alt="">
+                        </div>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontYelowColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <i class=" icon-star fontGrayColor"></i>
+                        <p>新菜单总体价格下调。菜的质量也随之下降！总体味道还可以。以前好多好吃的牛扒
+                            在新菜单里都没有了。还有我最爱喝的海鲜浓汤也没有了！我分析应该是换厨师了！
+                            偷偷去后厨看看果然没发现原来那些厨师！哎～不过服务员却说没换厨师！即便这样
+                            这里的牛扒也比missa之类的餐厅好吃好多了！建议大家来尝尝！如果你是牛扒控那
+                            么去莫尔顿牛扒吧！真正的美味啊！</p>
+                        <span>2014-03-30</span>
+                        <a href="">回应</a>
+                    </dd>
+                    <dd class="lastItem">
+                        <div class="pages">
+                            <a href="javascript:;">上一页</a>
+                            <a class="active" href="javascript:;">1</a>
+                            <a href="javascript:;">2</a>
+                            <a href="javascript:;">3</a>
+                            <a href="javascript:;">4</a>
+                            <a href="javascript:;">5</a>
+                            <a href="javascript:;">6</a>
+                            <a href="javascript:;">7</a>
+                            <a href="javascript:;">8</a>
+                            <a href="javascript:;">下一页</a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="fl tabShopEnvironment">
+                <ul>
+                    <li><span>主题：</span><input class="theme" type="text">元</li>
+                    <li><span>描述：</span><textarea name="" cols="30" rows="10" placeholder="不超过25字"></textarea></li>
+                    <li><span>选择图片：</span>
+                        <a href="javascript:;"  class="changeFile">选择文件</a>
+                        <p>单张图片不超过10M，尺寸不小于150px*150px，支持JPG、PNG、GIF格式</p>
+                        <p>请勿盗用他人的图片·请勿上传有色情内容的违规图片</p>
+
+                    </li>
+                    <li><a href="javascript:;">提交</a></li>
+                </ul>
+                <ol class="clearFloat">
+                    <li>
+                        <h4>快乐的一天</h4>
+                        <a href="javascript:;"><img src="../../images/project/branchReviews_enviroImg.jpg" alt=""></a>
+                        <p>快乐的一天，真的很美好啊，环境优雅。</p>
+                        <div class="discription">
+                            <a href="javascript:;">一缕青烟 | </a><span>12-25</span>
+                            <div>
+                                <a href="javascript:;"><img src="../../images/project/branchReviews_good.png"></a>(<span>90</span>)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>快乐的一天</h4>
+                        <a href="javascript:;"><img src="../../images/project/branchReviews_enviroImg.jpg" alt=""></a>
+                        <p>快乐的一天，真的很美好啊，环境优雅。</p>
+                        <div class="discription">
+                            <a href="javascript:;">一缕青烟 | </a><span>12-25</span>
+                            <div>
+                                <a href="javascript:;"><img src="../../images/project/branchReviews_good.png"></a>(<span>90</span>)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>快乐的一天</h4>
+                        <a href="javascript:;"><img src="../../images/project/branchReviews_enviroImg.jpg" alt=""></a>
+                        <p>快乐的一天，真的很美好啊，环境优雅。</p>
+                        <div class="discription">
+                            <a href="javascript:;">一缕青烟 | </a><span>12-25</span>
+                            <div>
+                                <a href="javascript:;"><img src="../../images/project/branchReviews_good.png"></a>(<span>90</span>)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>快乐的一天</h4>
+                        <a href="javascript:;"><img src="../../images/project/branchReviews_enviroImg.jpg" alt=""></a>
+                        <p>快乐的一天，真的很美好啊，环境优雅。</p>
+                        <div class="discription">
+                            <a href="javascript:;">一缕青烟 | </a><span>12-25</span>
+                            <div>
+                                <a href="javascript:;"><img src="../../images/project/branchReviews_good.png"></a>(<span>90</span>)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>快乐的一天</h4>
+                        <a href="javascript:;"><img src="../../images/project/branchReviews_enviroImg.jpg" alt=""></a>
+                        <p>快乐的一天，真的很美好啊，环境优雅。</p>
+                        <div class="discription">
+                            <a href="javascript:;">一缕青烟 | </a><span>12-25</span>
+                            <div>
+                                <a href="javascript:;"><img src="../../images/project/branchReviews_good.png"></a>(<span>90</span>)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>快乐的一天</h4>
+                        <a href="javascript:;"><img src="../../images/project/branchReviews_enviroImg.jpg" alt=""></a>
+                        <p>快乐的一天，真的很美好啊，环境优雅。</p>
+                        <div class="discription">
+                            <a href="javascript:;">一缕青烟 | </a><span>12-25</span>
+                            <div>
+                                <a href="javascript:;"><img src="../../images/project/branchReviews_good.png"></a>(<span>90</span>)
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <div class="pages">
+                    <a href="javascript:;">上一页</a>
+                    <a class="active" href="javascript:;">1</a>
+                    <a href="javascript:;">2</a>
+                    <a href="javascript:;">3</a>
+                    <a href="javascript:;">4</a>
+                    <a href="javascript:;">5</a>
+                    <a href="javascript:;">6</a>
+                    <a href="javascript:;">7</a>
+                    <a href="javascript:;">8</a>
+                    <a href="javascript:;">下一页</a>
+                </div>
+            </div>
+            <div class="fl tabTransport">
+                <ul>
+                    <li><span>自驾车：</span><textarea name=""  cols="30" rows="10"></textarea></li>
+                    <li><span>公 交：</span><textarea name=""  cols="30" rows="10"></textarea></li>
+                    <li><span>地 铁：</span><textarea name=""  cols="30" rows="10"></textarea></li>
+                    <li><a href="javascript:;">提交</a></li>
+                </ul>
+                <dl>
+                    <dd>
+                        <div class="commentDetail">
+                            <a href="javascript:;" class="headPortrait">
+                                <img src="../../images/project/branchReviews_commentPerson.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="name"><span>xiaoxiao</span></a>
+                            <img src="../../images/project/branchReviews_commentBadge.png" alt="">
+                        </div>
+                        <h5>这是我整理出来的路线，适合住在西城区的美食爱好者们。</h5>
+                        <h6>自驾车：</h6>
+                        <p>从北三环马甸桥上八达岭高速公路至景区出口下</p>
+                        <h6>公交：</h6>
+                        <p>八达岭位于北京西北方向的延庆县境内，距离市区约80公里。从市区到八达岭有高速公路。
+                            乘旅游专线车一小时可以到达。旅游专线车每天早晨在北京市区的前门楼东侧发车，往返人民币90元/人。</p>
+                        <h6>地铁：</h6>
+                        <p>登八达岭长城的最便宜的汽车乘车方式，2号线积水潭站出来，步行到德胜门正后方乘877路公共汽车直达
+                            八达岭长城脚下，每人现金12元，刷公交卡只需4.8元。车次频密，比旅游车要便宜许多，又方便。</p>
+                        <span>2014-03-30</span>
+                    </dd>
+                    <dd class="lastItem">
+                        <div class="commentDetail">
+                            <a href="javascript:;" class="headPortrait">
+                                <img src="../../images/project/branchReviews_commentPerson.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="name"><span>xiaoxiao</span></a>
+                            <img src="../../images/project/branchReviews_commentBadge.png" alt="">
+                        </div>
+                        <h5>这是我整理出来的路线，适合住在西城区的美食爱好者们。</h5>
+                        <h6>自驾车：</h6>
+                        <p>从北三环马甸桥上八达岭高速公路至景区出口下</p>
+                        <span>2014-03-30</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="fl tabShopBonus">
+                <img src="../../images/project/branchReviews_share.png" alt="">
+            </div>
+            <div class="fr tabTraffic">
+                <div>
+                    <h3>会员荣誉</h3>
+                    <ul>
+                        <li>会员<span>小儿贝贝</span>给了一个赞</li>
+                        <li>会员给了<span>小儿贝贝</span>一个店铺评价</li>
+                        <li>会员<span>郑琳</span>给了一个赞</li>
+                        <li>会员<span>郑琳</span>给了一个店铺评价</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>店铺荣誉</h3>
+                    <ul>
+                        <li>首次获得五星评价</li>
+                        <li>环境招聘累计达50张</li>
+                        <li>50次获得五星评价</li>
+                        <li>环境招聘累计达200张</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>其他店铺</h3>
+                    <ul class="otherShop">
+                        <li>牛扒工厂(东方广场店)
+                            <i class=" icon-star fontYelowColor"></i>
+                            <i class=" icon-star fontYelowColor"></i>
+                            <i class=" icon-star fontYelowColor"></i>
+                            <i class=" icon-star fontYelowColor"></i>
+                            <i class=" icon-star fontYelowColor"></i>
+                        </li>
+                        <li>牛扒工厂(国贸商城店)
+                            <i class=" icon-star fontYelowColor"></i>
+                            <i class=" icon-star fontYelowColor"></i>
+                            <i class=" icon-star fontYelowColor"></i>
+                            <i class=" icon-star fontYelowColor"></i>
+                            <i class=" icon-star fontGrayColor"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--底部-->
+<div id="footer">
+    <div class="inner overflowH">
+        <div class="top clearFloat">
+            <div class="fl">
+                <ul>
+                    <li><a href="#">网站首页</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">新手指引</a></li>
+                    <li><a href="#">友情链接</a></li>
+                </ul>
+                <p>北京飞度网络科技有限公司 www.renrentou.com 版权所有 京ICP备12015672号-7</p>
+            </div>
+            <div class="fr">
+                <p>关注人人投</p>
+                <div>
+                    <a href="#"><img src="../../images/public/sina.jpg">新浪微博</a>
+                    <a href="#"><img src="../../images/public/tengxun.jpg"><span class="fontBlueColor">腾讯</span><span
+                            class="fontYelloColor">微博</span></a>
+                    <a href="#"><img src="../../images/public/weixin.jpg">微信</a>
+                    <a href="#"><img src="../../images/public/online.jpg">在线咨询</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div>
+                <a href="#"><img src="../../images/public/header_icp.jpg"></a>
+                <a href="#"><img src="../../images/public/header_net.jpg"></a>
+                <a href="#"><img src="../../images/public/header_norton.jpg"></a>
+                <a href="#"><img src="../../images/public/header_img.jpg"></a>
+                <a href="#"><img src="../../images/public/header_badge.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

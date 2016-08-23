@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>弹窗</title>
+    <link href="../../css/reset.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/register.css" rel="stylesheet">
+    <script src="../../js/angular.min.js"></script>
+    <script src="../../js/toolkit.js"></script>
+    <script src="../../lib/jquery-1.12.4.js"></script>
+    <script src="../../js/widget.js" type="text/javascript"></script>
+	<script src="../../js/header.js"></script>
+    <script>
+        window.onload=function(){
+            document.getElementById("open_popBox_bth").onclick=function(){
+                logon_box();
+            };
+        }
+        var myapp=angular.module("myapp",[]);
+    </script>
+</head>
+
+
+<body>
+<!--头部开始-->
+<div id="header">
+    <div class="inner clearFloat">
+        <h1 class="fl">
+            <a href="../../index.html"><img src="../../images/public/logo.jpg"></a>
+        </h1>
+        <ul class="fl">
+            <li><a href="../invest/itemlist.html"><img src="../../images/public/header_title1.jpg"></a></li>
+            <li><a href="../invest/investorsLists.html"><img src="../../images/public/header_title2.jpg"></a></li>
+            <li><a href="../home/guid.html" class="smallfont">新手指引</a></li>
+        </ul>
+        <div class="fr">
+            <div class="loginInfo">
+                <a id="login" href="#" class="personbg">登录</a>
+                <a href="../register/registrant.html">注册</a>
+            </div>
+            <div class="memberInfo">
+                <div class="detail clearFloat">
+                    <a href="javascript:;" class="openList">会员中心<i></i></a>
+                    <a href="javascript:;">消息<span>(155)</span></a>
+                    <a href="javascript:;" class="personIcon"><img src="../../images/home/personIcon.jpg" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="../personal/personal.html"><i class="icon-user"></i>个人主页</a></li>
+                    <li><a href="javascript:;"><i class="icon-edit"></i>提交融资店铺</a></li>
+                    <li><a href="javascript:;"><i class="icon-file-alt"></i>已提交的融资店铺</a></li>
+                    <li><a href="../issuance/one.html"><i class="icon-user-md"></i>投资人认证</a></li>
+                    <li><a href="javascript:;"><i class="icon-cog"></i>账号设置</a></li>
+                    <li><a href="javascript:;" class="quite"><i class="icon-off"></i>安全退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--弹窗-->
+    <div class="popup">
+        <h5>加入人人投，体验最酷的店铺投融资方式！<a id="close" href="javascript:;"><img src="../../images/home/error.png"></a></h5>
+        <div class="fl">
+            <label>
+                <img src="../../images/home/agent.png" alt="">
+                <input type="text" placeholder="输入用户名" id="userName" name="userName">
+            </label>
+            <label>
+                <img src="../../images/home/lock.png" alt="">
+                <input type="password" placeholder="输入密码"  id="password" name="password">
+                <a href="javascript:;"></a>
+            </label>
+            <input type="text" placeholder="输入验证码" id="infiCode" name="infiCode">
+            <img src="../../images/home/infinCode.png" alt="">
+            <span>刷新</span>
+            <a href="javascript:;" class="login">立即登录</a>
+            <p><a href="../register/forgetPassword.html">忘记密码?</a></p>
+        </div>
+        <div class="fr">
+            <i>没有账号？</i>
+            <i>欢迎注册加入我们！</i>
+            <a href="../register/registrant.html" id="quickRegister">快速注册</a>
+            <p>或者使用合作网站登录</p>
+            <div class="icons">
+                <a href=""><img src="../../images/home/qq.png" alt=""></a><a href=""><img src="../../images/home/guidSina.png"></a><a href=""><img src="../../images/home/good.png"></a>
+            </div>
+
+        </div>
+    </div>
+    <!--蒙版-->
+    <div class="shadow"></div>
+</div>
+<!--头部结束-->
+
+<!--中间开始-->
+<div id="popup" class="inner main">
+    <div class="frame">
+        <div class="fl frameRight">
+            <h2>登录人人投</h2>
+            <form name="registerForm" novalidate>
+                <input class="inputOne" placeholder="请输入用户名"  type="text"  name="pname" ng-model="pname" required/>
+                <span ng-show="registerForm.pname.$error.required && registerForm.pname.$dirty">用户名不能为空</span>
+                <input class="inputTwo" placeholder="输入邮箱" type="email" name="email" ng-model="email" required>
+                <span ng-show="registerForm.email.$invalid">
+                    <span ng-show="registerForm.email.$error.required && registerForm.email.$dirty ">邮箱不能为空</span>
+                    <span ng-show="registerForm.email.$error.email && registerForm.email.$dirty ">邮箱格式错误</span>
+                </span>
+                <input class="inputThree" type="password" placeholder="输入密码" >
+                <input class="inputThree" type="password" placeholder="再次输入重复密码" >
+                <input class="validate" type="text" placeholder="  输入验证码"/>
+                <img src="../../images/register/pg_04%20.jpg">
+                <span><a href="#">刷新</a></span>
+            </form>
+
+            <div>
+                <input class="check" type="checkbox"/>
+                <a>我已阅读并同意《人人投网站服务协议》</a>
+            </div>
+            <button class="openBth" type="button" id="open_popBox_bth">快速注册</button>
+        </div>
+        <div class="fl frameLeft">
+            <h3>安全、高效、低门槛的实体店铺投融资平台！</h3>
+            <p>没有账号？欢迎注册加入我们！</p>
+            <button >立即登录</button>
+            <div class="label">
+                <h4>或者使用合作网站登录</h4>
+                <img src="../../images/register/wei_03.jpg">
+                <img src="../../images/register/wei_05.jpg">
+                <img src="../../images/register/wei_07.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<!--中间结束-->
+
+
+<!--底部开始-->
+<div id="footer">
+    <div class="inner">
+        <div class="top clearFloat">
+            <div class="fl">
+                <ul>
+                    <li><a href="#">网站首页</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">新手指引</a></li>
+                    <li><a href="#">友情链接</a></li>
+                </ul>
+                <p>北京飞度网络科技有限公司 www.renrentou.com 版权所有 京ICP备12015672号-7</p>
+            </div>
+            <div class="fr">
+                <p>关注人人投</p>
+                <div>
+                    <a href="#"><img src="../../images/public/sina.jpg">新浪微博</a>
+                    <a href="#"><img src="../../images/public/tengxun.jpg"><span class="fontBlueColor">腾讯</span><span class="fontYelloColor">微博</span></a>
+                    <a href="#"><img src="../../images/public/weixin.jpg">微信</a>
+                    <a href="#"><img src="../../images/public/online.jpg">在线咨询</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div>
+                <a href="#"><img src="../../images/public/header_icp.jpg"></a>
+                <a href="#"><img src="../../images/public/header_net.jpg"></a>
+                <a href="#"><img src="../../images/public/header_norton.jpg"></a>
+                <a href="#"><img src="../../images/public/header_img.jpg"></a>
+                <a href="#"><img src="../../images/public/header_badge.jpg"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+</body>
+</html>

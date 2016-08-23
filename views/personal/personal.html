@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link href="../../css/reset.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/personal.css" rel="stylesheet">
+    <script src="../../lib/jquery-1.12.4.js"></script>
+    <script src="../../js/personal.js" type="text/javascript"></script>
+    <script src="../../js/header.js"></script>
+</head>
+<body>
+<!--头部-->
+<div id="header">
+    <div class="inner clearFloat">
+        <h1 class="fl">
+            <a href="../../index.html"><img src="../../images/public/logo.jpg"></a>
+        </h1>
+        <ul class="fl">
+            <li><a href="../../views/invest/itemlist.html"><img src="../../images/public/header_title1.jpg"></a></li>
+            <li><a href="../../views/invest/investorsLists.html"><img src="../../images/public/header_title2.jpg"></a></li>
+            <li><a href="../../views/home/guid.html" class="smallfont">新手指引</a></li>
+        </ul>
+        <div class="fr">
+            <div class="loginInfo">
+                <a id="login" href="#" class="personbg">登录</a>
+                <a href="../../views/register/registrant.html">注册</a>
+            </div>
+            <div class="memberInfo">
+                <div class="detail clearFloat">
+                    <a href="javascript:;" class="openList">会员中心<i></i></a>
+                    <a href="javascript:;">消息<span>(155)</span></a>
+                    <a href="javascript:;" class="personIcon"><img src="../../images/home/personIcon.jpg" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="../../views/personal/personal.html"><i class="icon-user"></i>个人主页</a></li>
+                    <li><a href="javascript:;"><i class="icon-edit"></i>提交融资店铺</a></li>
+                    <li><a href="javascript:;"><i class="icon-file-alt"></i>已提交的融资店铺</a></li>
+                    <li><a href="../../views/issuance/one.html"><i class="icon-user-md"></i>投资人认证</a></li>
+                    <li><a href="javascript:;"><i class="icon-cog"></i>账号设置</a></li>
+                    <li><a href="javascript:;" class="quite"><i class="icon-off"></i>安全退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--弹窗-->
+    <div class="popup">
+        <h5>加入人人投，体验最酷的店铺投融资方式！<a id="close" href="javascript:;"><img src="../../images/home/error.png"></a></h5>
+        <div class="fl">
+            <label>
+                <img src="../../images/home/agent.png" alt="">
+                <input type="text" placeholder="输入用户名" id="userName" name="userName">
+            </label>
+            <label>
+                <img src="../../images/home/lock.png" alt="">
+                <input type="password" placeholder="输入密码"  id="password" name="password">
+                <a href="javascript:;"></a>
+            </label>
+            <input type="text" placeholder="输入验证码" id="infiCode" name="infiCode">
+            <img src="../../images/home/infinCode.png" alt="">
+            <span>刷新</span>
+            <a href="javascript:;" class="login">立即登录</a>
+            <p><a href="../../views/register/forgetPassword.html">忘记密码?</a></p>
+        </div>
+        <div class="fr">
+            <i>没有账号？</i>
+            <i>欢迎注册加入我们！</i>
+            <a href="../../views/register/registrant.html" id="quickRegister">快速注册</a>
+            <p>或者使用合作网站登录</p>
+            <div class="icons">
+                <a href=""><img src="../../images/home/qq.png" alt=""></a><a href=""><img src="../../images/home/guidSina.png"></a><a href=""><img src="../../images/home/good.png"></a>
+            </div>
+
+        </div>
+    </div>
+    <!--蒙版-->
+    <div class="shadow"></div>
+</div>
+<!--头部结束-->
+<div id="personal" class="inner">
+
+	<!-- 弹窗 -->
+	<div class="popLayer">
+	    <div class="popTit">
+	        <a href="javascript:;" title="关闭" class="close">×</a>
+	        <h2>编辑个人简介</h2>
+	    </div>
+	    <div class="login">
+	        <p>邮箱是您在人人投的重要安全凭证，同时也是您在人人投网站中进行投融资活动的重要沟通工具。所以，为了确保您提供的邮箱是真实有效的，请进行邮箱验证。</p>
+	        <div><button>登陆</button><button class="esc">取消</button></div>
+	    </div>
+	</div>
+	<div class="modalLayer"></div>
+
+	    <!--header开始-->
+    <div class="header bd mt20 pd25">
+        <div class="fl face"><img src="../../images/personal/portrait.jpg" alt=""></div>
+        <div class="fl">
+            <h2 class="mt10 mb10">兰兰 <i class="icon-thumbs-up"></i></h2>
+            <ul class="mb20">
+                <li>251<span>关注</span></li>
+                <li>15<span>约谈</span></li>
+                <li>11<span>投资</span></li>
+            </ul>
+            <p>北京飞度传媒公司<span class="ml10">创始人</span></p>
+            <p>投资星级: <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i
+                    class="icon-star"></i> <i class="icon-star"></i></p>
+        </div>
+        <div>
+            <span class="icon02"><img src="../../images/personal/header_icon01.jpg"></span>
+            <span class="icon03"><img src="../../images/personal/header_icon02.jpg"></span>
+            <div class="icon01"><a href="message.html">投递项目</a></div>
+        </div>
+    </div>
+    <!--header结束-->
+
+    <div class="mt20 clearFloat">
+        <!--mainLeft开始-->
+        <ul id="mainLeft" class="mainLeft bd fl pd10">
+            <li>
+                <i class="icon-user"></i><span>基本信息</span></li>
+            <li>
+                <i class=" icon-thumbs-up"></i><span>店铺</span>
+                <ul class="blockNone">
+                    <li>提交的店铺<i class="icon-angle-right  fr"></i></li>
+                    <li>投资的店铺<i class="icon-angle-right  fr"></i></li>
+                </ul>
+            </li>
+            <li><i class="icon-star"></i><span>资金管理</span></li>
+            <li>
+                <i class=" icon-bullhorn"></i><span>动态</span>
+                <ul class="blockNone">
+                    <li>我的动态<i class="icon-angle-right fr"></i></li>
+                    <li>我关注的动态<i class="icon-angle-right fr"></i></li>
+                </ul>
+            </li>
+            <li><i class="icon-comment-alt"></i><span>评论（25）</span></li>
+            <li><i class="icon-user"></i><span>粉丝（25）</span></li>
+            <li><i class="icon-star"></i><span>关注（25）</span></li>
+        </ul>
+        <!--mainLeft结束-->
+
+        <!--mainRight开始-->
+        <div id="mainRight" class="mainRight fr">
+            <!-- 基本信息 -->
+            <div class="width685 bd fr pd20">
+                <h2 class="bdb_dotted pdb10 nameTit">个人简介 <a class="btn" href="javascript:;">编辑(老师这里有弹窗)</a></h2>
+                <p>
+                    今后外省（市、自治区）和中央部门所属的建筑业企业，进川“揽活”必须提供由所在地省级建设行政主管部门开具的诚信状况证明。据了解，《四川省省外建筑业企业入川从事建筑活动管理规定》已完成初稿，并开始征求意见。省外企业入川承接工程施工，必须取得《四川省省外企业入川从事建筑业备案登记证》。</p>
+                <h2 class="bdb_dotted mt25 pdb10">投资金额</h2>
+                <ul class="list">
+                    <li class="pd15 mr20">最小投资金额：￥ 50,000</li>
+                    <li class="pd15">最大投资金额：￥ 100,000</li>
+                </ul>
+                <h2 class="bdb_dotted mt25 pdb10">关注行业</h2>
+                <ul class="list">
+                    <li class="pd15 mr20">美食：烧烤、西式快餐</li>
+                    <li class="pd15">生活服务：健康护理</li>
+                    <li class="pd15 mr20">教育培训：少儿教育、成人教育</li>
+                    <li class="pd15">生活娱乐：酒吧、KTV</li>
+                </ul>
+                <h2 class="bdb_dotted mt25 pdb10">投资理念</h2>
+                <ul class="list">
+                    <li class="pd15">团队：创始人有创业背景</li>
+                    <br>
+                    <li class="pd15">产品：刚性需求</li>
+                    <br>
+                    <li class="pd15">市场：已盈利</li>
+                </ul>
+                <h2 class="bdb_dotted mt25 pdb10">能为项目方提供的</h2>
+                <ul class="list">
+                    <li class="pd15">资金支持</li>
+                    <br>
+                    <li class="pd15">政策利好</li>
+                    <br>
+                    <li class="pd15">人力资源</li>
+                </ul>
+            </div>
+            <!-- 店铺 -->
+            <div class="second">
+                <div class="width725 fr">
+                    <dl class="bd mt10 mb30 pd10 li02">
+                        <dt><img src="../../images/personal/img04.jpg" alt=""></dt>
+                        <dd>
+                            <h2>正宗西北农家自制荞皮枕芯</h2>
+                            <div>
+                                <a href="#" class="fl">北京市西城区</a>
+                                <img src="../../images/personal/r_03.jpg" alt="">
+                            </div>
+                            <p class="clearFloat">2014-03-31</p>
+                        </dd>
+                        <span><img src="../../images/personal/rongzichenggong.png" alt=""></span>
+                    </dl>
+                    <dl class="bd mb30 pd10 li02">
+                        <dt><img src="../../images/personal/img03.jpg" alt=""></dt>
+                        <dd>
+                            <h2>茑屋书店（DaikanyamaT-Site）</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                        <span><img src="../../images/personal/rongzizhong.png" alt=""></span>
+                    </dl>
+                    <dl class="bd mb30 pd10 li02">
+                        <dt><img src="../../images/personal/img02.jpg" alt=""></dt>
+                        <dd>
+                            <h2>麻辣烫项目扩张</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                        <span><img src="../../images/personal/yurezhong.png" alt=""></span>
+                    </dl>
+                    <dl class="bd mt10 mb30 pd10 li02">
+                        <dt><img src="../../images/personal/img04.jpg" alt=""></dt>
+                        <dd>
+                            <h2>正宗西北农家自制荞皮枕芯</h2>
+                            <div>
+                                <a href="#" class="fl">北京市西城区</a>
+                                <img src="../../images/personal/r_03.jpg" alt="">
+                            </div>
+                            <p class="clearFloat">2014-03-31</p>
+                        </dd>
+                        <span><img src="../../images/personal/rongzichenggong.png" alt=""></span>
+                    </dl>
+                    <dl class="bd mb30 pd10 li02">
+                        <dt><img src="../../images/personal/img03.jpg" alt=""></dt>
+                        <dd>
+                            <h2>茑屋书店（DaikanyamaT-Site）</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                        <span><img src="../../images/personal/rongzizhong.png" alt=""></span>
+                    </dl>
+                    <dl class="bd mt10 mb30 pd10 li02">
+                        <dt><img src="../../images/personal/img04.jpg" alt=""></dt>
+                        <dd>
+                            <h2>正宗西北农家自制荞皮枕芯</h2>
+                            <div>
+                                <a href="#" class="fl">北京市西城区</a>
+                                <img src="../../images/personal/r_03.jpg" alt="">
+                            </div>
+                            <p class="clearFloat">2014-03-31</p>
+                        </dd>
+                        <span><img src="../../images/personal/rongzichenggong.png" alt=""></span>
+                    </dl>
+                    <ul class="page">
+                        <li>上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+                <div class="width685 bd pd20 fr">
+                    <p class="title mt40 mb40">您还没有对店铺有任何操作，现在可以去找找自己喜欢的店铺或提交自己的店铺</p>
+                    <div class="title h200"><a href="" class="mr20">提交融资店铺</a><a href="">查找融资店铺</a></div>
+                </div>
+            </div>
+            <!-- 资金管理 -->
+            <div class="fr">
+                <div>
+                <div class="width685 bd pd20 fund">
+                    <div class="bdb_dotted mg10">
+                        <p class="inlineBlock pr30">账户余额：<span>￥22,888,556</span></p>
+                        <a href="" class="one">查看历史资金记录</a>
+                    </div>
+                    <div class="fl mg10">
+                        <div class="inlineBlock mr20">
+                            <p>可用资金：<span>￥22,888,556</span></p>
+                            <p>已充值金额：<span>￥22,888,556</span></p>
+                        </div>
+                        <a class="btn" href="javascript:;">充值</a>
+                    </div>
+                    <div class="fr mg10">
+                        <div class="inlineBlock mr20">
+                            <p>冻结资金：<span>￥22,888,556</span></p>
+                            <p>已提现总额：<span>￥22,888,556</span></p>
+                        </div>
+                        <a href="" class="one">提现</a>
+                    </div>
+                </div>
+                <h2 class="pd10 bgF9 pdt20">提现银行卡</h2>
+                <div class="width685 borderTop bd pd20 fund">
+                    <div class="fl left pdt30">+ 添加银行卡 <p>只能绑定一个</p></div>
+                    <div class="fl right"><img src="../../images/personal/img_rh.jpg">
+                        <p>更换银行卡</p></div>
+                </div></div>
+            </div>
+            <!-- 动态 -->
+            <div class="second">
+                <div class="width685 bd fr pd20">
+                    <dl class="bdb_dotted pdb20 li01">
+                        <dt><img src="../../images/personal/img01.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted pdb20 li01">
+                        <dt><img src="../../images/personal/img01.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted pdb20 li01">
+                        <dt><img src="../../images/personal/img01.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted mt10 pdb20 li01">
+                        <dt><img src="../../images/personal/img01.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted mt10 pdb20 li01">
+                        <dt><img src="../../images/personal/img01.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted mt10 pdb20 li01">
+                        <dt><img src="../../images/personal/img01.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <ul class="page">
+                        <li>上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+                <div class="width685 bd fr pd20">
+                    <dl class="bdb_dotted pdb20 li01">
+                        <dt><img src="../../images/personal/img05.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted pdb20 li01">
+                        <dt><img src="../../images/personal/img06.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted pdb20 li01">
+                        <dt><img src="../../images/personal/img05.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted mt10 pdb20 li01">
+                        <dt><img src="../../images/personal/img06.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted mt10 pdb20 li01">
+                        <dt><img src="../../images/personal/img05.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <dl class="bdb_dotted mt10 pdb20 li01">
+                        <dt><img src="../../images/personal/img01.jpg" alt=""></dt>
+                        <dd class="pd10">
+                            <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                            <p>2014-03-31</p>
+                        </dd>
+                    </dl>
+                    <ul class="page">
+                        <li>上一页</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>下一页</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 评论 -->
+            <div class="width685 bd fr pd20">
+                <dl class="bdb_dotted pdb20 li03 height140">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>xiaoxiao</h2>
+                        <p class="pd10">投资星级 <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></p>
+                        <p class="p">奶茶，顾名思义是牛奶与茶的融合，就产生了奶气茶香的奶茶。相传是西藏人首创将茶奶混合来喝
+的方式，后来传往相邻的印度，当英国人来到印度时耳濡目染，便将此法传开。年代更替、岁月变
+迁，奶茶经过数度加工</p>
+                        <span>2014-03-31</span>
+                    </dd>
+                    <div class="icon"><a class="btn" href="javascript:;">回复</a></div>
+                </dl>
+                <dl class="bdb_dotted pdb20 li03 height140">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>xiaoxiao</h2>
+                        <p class="pd10">投资星级 <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></p>
+                        <p class="p">奶茶，顾名思义是牛奶与茶的融合，就产生了奶气茶香的奶茶。相传是西藏人首创将茶奶混合来喝
+的方式，后来传往相邻的印度，当英国人来到印度时耳濡目染，便将此法传开。年代更替、岁月变
+迁，奶茶经过数度加工</p>
+                        <span>2014-03-31</span>
+                    </dd>
+                    <div class="icon"><a class="btn" href="javascript:;">回复</a></div>
+                </dl>
+                <dl class="bdb_dotted pdb20 li03 height140">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>xiaoxiao</h2>
+                        <p class="pd10">投资星级 <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></p>
+                        <p class="p">奶茶，顾名思义是牛奶与茶的融合，就产生了奶气茶香的奶茶。相传是西藏人首创将茶奶混合来喝
+的方式，后来传往相邻的印度，当英国人来到印度时耳濡目染，便将此法传开。年代更替、岁月变
+迁，奶茶经过数度加工</p>
+                        <span>2014-03-31</span>
+                    </dd>
+                    <div class="icon"><a class="btn" href="javascript:;">回复</a></div>
+                </dl>
+                <dl class="bdb_dotted pdb20 li03 height140">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>xiaoxiao</h2>
+                        <p class="pd10">投资星级 <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></p>
+                        <p class="p">奶茶，顾名思义是牛奶与茶的融合，就产生了奶气茶香的奶茶。相传是西藏人首创将茶奶混合来喝
+的方式，后来传往相邻的印度，当英国人来到印度时耳濡目染，便将此法传开。年代更替、岁月变
+迁，奶茶经过数度加工</p>
+                        <span>2014-03-31</span>
+                    </dd>
+                    <div class="icon"><a class="btn" href="javascript:;">回复</a></div>
+                </dl>
+                <dl class="bdb_dotted pdb20 li03 height140">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>xiaoxiao</h2>
+                        <p class="pd10">投资星级 <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></p>
+                        <p class="p">奶茶，顾名思义是牛奶与茶的融合，就产生了奶气茶香的奶茶。相传是西藏人首创将茶奶混合来喝
+的方式，后来传往相邻的印度，当英国人来到印度时耳濡目染，便将此法传开。年代更替、岁月变
+迁，奶茶经过数度加工</p>
+                        <span>2014-03-31</span>
+                    </dd>
+                    <div class="icon"><a class="btn" href="javascript:;">回复</a></div>
+                </dl>
+                <ul class="page">
+                    <li>上一页</li>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>下一页</li>
+                </ul>
+            </div>
+            <!-- 粉丝 -->
+            <div class="width685 bd fr pd20">
+                <dl class="bdb_dotted pdb20 li03">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                        <p>北京飞度传媒公司 <span>创始人</span></p>
+                        <p>
+                            <span><i class="icon-star"></i> 25</span>
+                            <span><i class="icon-star"></i> 22</span>
+                            <span><i class="icon-star"></i> 12</span>
+                        </p>
+                    </dd>
+                    <div class="icon"><a href="#">关注</a></div>
+                </dl>
+                <dl class="bdb_dotted pdb20 li03">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                        <p>北京飞度传媒公司 <span>创始人</span></p>
+                        <p>
+                            <span><i class="icon-star"></i> 25</span>
+                            <span><i class="icon-star"></i> 22</span>
+                            <span><i class="icon-star"></i> 12</span>
+                        </p>
+                    </dd>
+                    <div class="icon"><a href="#">关注</a></div>
+                </dl>
+                <dl class="bdb_dotted pdb20 li03">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                        <p>北京飞度传媒公司 <span>创始人</span></p>
+                        <p>
+                            <span><i class="icon-star"></i> 25</span>
+                            <span><i class="icon-star"></i> 22</span>
+                            <span><i class="icon-star"></i> 12</span>
+                        </p>
+                    </dd>
+                    <div class="icon"><a href="#">关注</a></div>
+                </dl>
+                <dl class="bdb_dotted pdb20 li03">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                        <p>北京飞度传媒公司 <span>创始人</span></p>
+                        <p>
+                            <span><i class="icon-star"></i> 25</span>
+                            <span><i class="icon-star"></i> 22</span>
+                            <span><i class="icon-star"></i> 12</span>
+                        </p>
+                    </dd>
+                    <div class="icon"><a href="#">关注</a></div>
+                </dl>
+                <dl class="bdb_dotted pdb20 li03">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                        <p>北京飞度传媒公司 <span>创始人</span></p>
+                        <p>
+                            <span><i class="icon-star"></i> 25</span>
+                            <span><i class="icon-star"></i> 22</span>
+                            <span><i class="icon-star"></i> 12</span>
+                        </p>
+                    </dd>
+                    <div class="icon"><a href="#">关注</a></div>
+                </dl>
+                <dl class="bdb_dotted pdb20 li03">
+                    <dt><img src="../../images/personal/portrait.jpg" alt=""></dt>
+                    <dd class="pd10">
+                        <h2>裴兰兰 预约认购了多格茶饮店铺</h2>
+                        <p>北京飞度传媒公司 <span>创始人</span></p>
+                        <p>
+                            <span><i class="icon-star"></i> 25</span>
+                            <span><i class="icon-star"></i> 22</span>
+                            <span><i class="icon-star"></i> 12</span>
+                        </p>
+                    </dd>
+                    <div class="icon"><a href="#">关注</a></div>
+                </dl>
+                <ul class="page">
+                    <li>上一页</li>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>下一页</li>
+                </ul>
+            </div>
+            <!-- 关注 -->
+            <div class="width685 bd pd20 fr">
+                <p class="title mt40 mb40">您还没有对店铺有任何操作，现在可以去找找自己喜欢的店铺或提交自己的店铺</p>
+                <div class="title h200"><a class="btn mr20" href="javascript:;">提交融资店铺</a><a class="btn" href="javascript:;">查找融资店铺</a></div>
+            </div>
+        </div>
+        <!--mainRight结束-->
+    </div>
+</div>
+
+<!--底部开始-->
+<div id="footer">
+    <div class="inner overflowH">
+        <div class="top clearFloat">
+            <div class="fl">
+                <ul>
+                    <li><a href="../index.html">网站首页</a></li>
+                    <li><a href="../../views/register/synopsis.html">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="../../views/register/synopsis.html">帮助中心</a></li>
+                    <li><a href="../../views/home/guid.html">新手指引</a></li>
+                    <li><a href="#">友情链接</a></li>
+                </ul>
+                <p>北京飞度网络科技有限公司 www.renrentou.com 版权所有 京ICP备12015672号-7</p>
+            </div>
+            <div class="fr">
+                <p>关注人人投</p>
+                <div>
+                    <a href="#"><img src="../../images/public/sina.jpg">新浪微博</a>
+                    <a href="#"><img src="../../images/public/tengxun.jpg"><span class="fontBlueColor">腾讯</span><span
+                            class="fontYelloColor">微博</span></a>
+                    <a href="#"><img src="../../images/public/weixin.jpg">微信</a>
+                    <a href="#"><img src="../../images/public/online.jpg">在线咨询</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div>
+                <a href="#"><img src="../../images/public/header_icp.jpg"></a>
+                <a href="#"><img src="../../images/public/header_net.jpg"></a>
+                <a href="#"><img src="../../images/public/header_norton.jpg"></a>
+                <a href="#"><img src="../../images/public/header_img.jpg"></a>
+                <a href="#"><img src="../../images/public/header_badge.jpg"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+</body>
+</html>

@@ -1,0 +1,941 @@
+
+#register{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#register .frame {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 2px solid #000;
+    height: 492px;
+    width: 994px;
+}
+
+#register .frame h2{
+    font-size: 30px;
+    color: #000;
+    padding: 58px 0 60px 85px
+}
+
+/*左边时间*/
+#register .frame .frameRight{
+    width: 490px;
+}
+#register .frame .frameRight input{
+    width: 284px;
+    height: 40px;
+    margin: 0 0 20px 85px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc
+}
+#register .frame .frameRight .validate{
+    width: 122px;
+    height: 40px;
+
+}
+
+#register .frame .frameRight img{
+    vertical-align: middle;
+}
+
+#register .frame .frameRight span a{
+    font-size: 14px;
+    color: #000;
+}
+
+#register .frame .frameRight button{
+    width: 285px;
+    height: 50px;
+    margin-left: 85px;
+    background-color: #db4f33;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+}
+
+#register .frame .frameRight button a{
+    color: #fff;
+}
+#register .frame .frameRight p{
+   line-height:32px;
+    font-size: 14px;
+    color: #666;
+    padding-left: 300px;
+}
+
+#register .frame .frameRight p a{
+    color: #666;
+}
+
+
+
+/*右边的样式*/
+#register .frameLeft h3{
+    font-size: 18px;
+    color: #c12000;
+    line-height: 153px;
+    padding-left: 77px;
+}
+
+#register .frameLeft p{
+    font-size: 14px;
+    color: #000;
+    line-height: 56px;
+    padding-left: 77px;
+}
+#register .frameLeft button{
+    width: 143px;
+    height: 35px;
+    background-color: #db4f33;
+    border: 0;
+    margin-left: 77px;
+}
+
+#register .frameLeft button a{
+    color: #fff;
+    font-family: "微雅软黑";
+}
+
+#register .frameLeft .label{
+    width: 282px;
+    height: 75px;
+    background-color: #f5f5f5;
+    margin-top: 32px;
+    margin-left: 77px;
+}
+
+#register .frameLeft .label h4{
+    font-size: 14px;
+    color: #000;
+    line-height: 40px;
+    padding-left: 14px;
+}
+#register .frameLeft .label img{
+    padding-left: 14px;
+}
+
+
+
+/*****************************************skip的样式**************************/
+#skip{
+    width: 1000px;
+    height: 490px;
+    border: 1px solid #ccc;
+    margin-top: 100px;
+    margin-bottom: 100px
+
+}
+
+#skip h2{
+    font-size: 30px;
+    color: #000;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#skip p{
+    font-size: 20px;
+    color: #000;
+    line-height: 86px;
+    text-align: center;
+}
+
+#skip button{
+    width: 106px;
+    line-height: 36px;
+    background-color: #f39c11;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 48px;
+    margin-left: 450px;
+}
+
+
+#skip .link{
+    width: 800px;
+    height: 42px;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    margin: 0 auto;
+    text-align: center;
+}
+#skip .link li{
+    display: inline-block;
+    line-height: 42px;
+    margin-right:5px;
+}
+
+#skip .link li a{
+    font-size: 14px;
+    color: #007bb8;
+    display: inline-block;
+    }
+
+
+/*********************registrant的样式**************************/
+
+#registrant{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#registrant .frame {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 2px solid #000;
+    height: 630px;
+    width: 994px;
+}
+
+#registrant .frame h2{
+    font-size: 30px;
+    color: #000;
+    padding: 58px 0 60px 85px
+}
+
+/*左边时间*/
+#registrant .frame .frameRight{
+    width: 490px;
+}
+#registrant .frame .frameRight input{
+    width: 244px;
+    height: 40px;
+    margin: 0 0 20px 85px;
+    padding-left: 40px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc
+}
+
+#registrant .frame .frameRight .inputOne{
+    background: url("../images/register/tu_03.jpg") no-repeat center  left;
+}
+
+#registrant .frame .frameRight .inputTwo{
+    background: url("../images/register/tu_06.jpg") no-repeat center  left;
+}
+
+#registrant .frame .frameRight .inputThree{
+    background: url("../images/register/tu_10.jpg") no-repeat center  left;
+}
+
+#registrant .frame .frameRight .validate{
+    width: 122px;
+    height: 40px;
+
+}
+
+#registrant .frame .frameRight img{
+    vertical-align: middle;
+}
+
+#registrant .frame .frameRight span a{
+    font-size: 14px;
+    color: #000;
+}
+
+#registrant .frame .frameRight .check{
+    width: 14px;
+    height: 14px;
+    display:inline-block;
+}
+
+#registrant .frame .frameRight a{
+font-size: 14px;
+}
+#registrant .frame .frameRight button{
+    width: 285px;
+    height: 50px;
+    margin-left: 85px;
+    background-color: #db4f33;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+}
+#registrant .frame .frameRight p{
+    line-height:32px;
+    font-size: 14px;
+    color: #666;
+    padding-left: 300px;
+}
+
+
+
+/*右边的样式*/
+#registrant .frameLeft h3{
+    font-size: 18px;
+    color: #c12000;
+    line-height: 153px;
+    padding-left: 77px;
+}
+
+#registrant .frameLeft p{
+    font-size: 14px;
+    color: #000;
+    line-height: 56px;
+    padding-left: 77px;
+}
+#registrant .frameLeft button{
+    width: 143px;
+    height: 35px;
+    background-color: #db4f33;
+    border: 0;
+    margin-left: 77px;
+}
+#registrant .frameLeft .label{
+    width: 282px;
+    height: 75px;
+    background-color: #f5f5f5;
+    margin-top: 32px;
+    margin-left: 77px;
+}
+
+#registrant .frameLeft .label h4{
+    font-size: 14px;
+    color: #000;
+    line-height: 40px;
+    padding-left: 14px;
+}
+#registrant .frameLeft .label img{
+    padding-left: 14px;
+}
+
+/*********************synopsis的样式**************************/
+
+#synopsis{
+    margin-top: 40px;
+    margin-bottom:40px ;
+    height: auto;
+}
+
+#synopsis h2{
+    font-size: 22px;
+    color: #000;
+    line-height: 60px;
+}
+
+#synopsis .about {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: 2px solid #000;
+    border-right: 1px solid #ccc;
+    width: 995px;
+    height:auto;
+    overflow: hidden;
+}
+#synopsis .about .nav{
+    float: left;
+    width: 233px;
+
+    min-height:600px;
+
+
+}
+
+
+#synopsis .about .nav .navOne{
+    background: url("../images/register/jiao_03.jpg") no-repeat  208px center;
+    background-color: red;
+}
+
+
+
+#synopsis .about .nav li{
+    width: 192px;
+    line-height: 54px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-left: 42px;
+    color: #000;
+    font-size: 14px;
+}
+
+#synopsis .about .content{
+float: left;
+width: 720px;
+border-left: 1px solid #f0f0f0;
+min-height:600px;
+}
+
+#synopsis .about .content .page{
+    width: 100%;
+    display: none;
+}
+
+#synopsis .about .content .page.active{display:block}
+
+#synopsis .about .content h3{
+    font-size: 18px;
+    color: #000;
+    line-height: 48px;
+    padding-left: 30px;
+    border-bottom: 3px solid #ccc;
+    width: 680px;
+    margin: 0 20px;
+}
+
+#synopsis .about .content p{
+    line-height: 28px;
+    font-size: 14px;
+    color: #000;
+    margin:24px 20px 0 18px;
+}
+
+#synopsis .pageTu{
+    padding: 0 3px;
+}
+
+
+
+#synopsis .pageTu li{
+    float: left;
+    padding:0 4px;
+}
+
+#synopsis h4{
+    font-size: 14px;
+    color:#db4f33;
+    margin-left: 25px;
+    padding-top: 18px;
+
+}
+
+#synopsis h5{
+    font-size: 14px;
+    color: #000;
+    line-height: 27px;
+    margin-left: 25px;
+}
+
+#synopsis h6{
+    font-size: 18px;
+    color: #000;
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 3px solid #ccc;
+}
+#synopsis .page dl{
+    /*margin-top: 28px;
+    margin-bottom: 18px;*/
+    height: 130px;
+    width: 760px;
+    border-bottom: 1px dotted #ccc;
+
+}
+
+#synopsis .page dl dt{
+    float: left;
+    padding-top: 4px;
+    padding-bottom: 20px;
+    padding-right: 8px;
+}
+
+#synopsis .page dl dd h5{
+    margin-top: 28px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #c9070a;
+}
+#synopsis .page dl dd span{
+    font-size: 12px;
+    color: #000;
+    line-height: 24px;
+}
+#synopsis .page dl dd{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+
+
+
+/*********************password的样式**************************/
+
+#password{
+    /*margin-top: 100px;*/
+    margin-bottom: 100px;
+    width: 1000px;
+    height: 490px;
+    border: 1px solid #ccc;
+}
+
+
+#password .passwordTop{
+    height: 108px;
+    width: 845px;
+    margin-left: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+#password .passwordTop h2{
+    line-height: 80px;
+    font-size: 30px;
+    float: left;
+    margin-top:20px;
+}
+
+#password .passwordTop img{
+    float:right;
+}
+
+#password .passwordBottom{
+    height: 380px;
+}
+
+
+#password .passwordBottom img{
+  float: left;
+}
+#password .passwordBottom .Email{
+    width: 285px;
+    height: 42px;
+    margin: 90px 0px 26px 80px;
+    background: url("../images/register/tu_06.jpg") no-repeat  left center;
+    border-radius:5px;
+    padding-left: 40px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+#password .passwordBottom .Text{
+    width: 122px;
+    height: 43px;
+    margin-left: 80px;
+    border-radius:5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+#password .tu{
+    float: right;
+    margin-right: 213px;
+    vertical-align: top;
+}
+
+#password .tu a{
+    vertical-align: middle;
+    color: #000;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#password .passwordBottom button{
+    color: #fff;
+    font-size: 20px;
+    background-color: #db4f33;
+    width: 285px;
+    height: 50px;
+    border-radius:5px;
+    border: 0;
+    margin: 30px 0 0 80px;
+    outline: none;
+}
+
+
+
+/*********************forgetPassword的样式**************************/
+#forgetPassword{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 1000px;
+    height: 490px;
+    border: 1px solid #ccc;
+}
+
+#forgetPassword .forgetPasswordTob{
+    height: 108px;
+    width: 845px;
+    margin-left: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+#forgetPassword .forgetPasswordTob h2{
+    line-height: 80px;
+    font-size: 30px;
+    float: left;
+    margin-top:20px;
+}
+
+#forgetPassword .forgetPasswordTob img{
+    float:right;
+}
+
+#forgetPassword .forgetPasswordBottom input{
+    border: 1px solid #ccc;
+    padding-left: 40px;
+}
+
+#forgetPassword .forgetPasswordBottom .inputOne{
+    width: 284px;
+    height: 44px;
+    margin: 76px 273px 23px 273px;
+    border-radius: 5px;
+    background: url("../images/register/tu_08.jpg") no-repeat left center;
+    outline: none;
+}
+
+#forgetPassword .forgetPasswordBottom .inputTwo{
+    width: 284px;
+    border: 1px solid #ccc;
+    height: 44px;
+    margin-left: 276px;
+    border-radius: 5px;
+    background: url("../images/register/tu_10.jpg") no-repeat left center;
+    outline: none;
+}
+
+#forgetPassword .forgetPasswordBottom button{
+    width: 100px;
+     height: 36px;
+    background-color: #db4f33;
+    display: block;
+    margin-left: 370px;
+    margin-top: 30px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+#forgetPassword .forgetPasswordBottom button a{
+    color: #fff;
+}
+
+
+/*********************passwordSuccess的样式**************************/
+
+#passwordSuccess{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 1000px;
+    height: 490px;
+    border: 1px solid #ccc;
+}
+#passwordSuccess .passwordSuccessTop{
+    height: 108px;
+    width: 845px;
+    margin-left: 80px;
+    border-bottom: 1px solid #ccc;
+}
+#passwordSuccess .passwordSuccessTop h2{
+    line-height: 80px;
+    font-size: 30px;
+    float: left;
+    margin-top:20px;
+}
+
+#passwordSuccess .passwordSuccessTop img{
+    float:right;
+}
+
+#passwordSuccess .passwordSuccessBottom h1{
+    line-height: 114px;
+    margin-top: 60px;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#passwordSuccess .passwordSuccessBottom button{
+    width: 100px;
+    height: 38px;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 450px;
+    border: 0;
+    border-radius: 5px;
+    background-color:#db4f33 ;
+}
+
+#passwordSuccess .passwordSuccessBottom button a{
+    color: #fff;
+}
+
+/*********************payment的样式**************************/
+
+#payment{
+    margin-top:40px;
+    margin-bottom:40px;
+
+}
+
+#payment h1{
+line-height:40px;
+    font-size: 22px;
+    font-family: 微软雅黑;
+    color: #000;
+}
+
+#payment .paymentSuccess{
+    width: 998px;
+    height: 490px;
+    border: 1px solid #ccc;
+}
+#payment .paymentSuccess h2{
+    line-height: 38px;
+    background-color: #f2f2f2;
+    color: #000;
+    font-family:微软雅黑;
+    margin-left: 20px;
+}
+
+#payment .paymentSuccess dl{
+    height: 210px;
+    width: 994px;
+    padding-top: 85px;
+    padding-left: 250px;
+}
+
+#payment .paymentSuccess dl dt{
+    float: left;
+}
+#payment .paymentSuccess dd{
+    line-height: 36px;
+    font-size: 18px;
+    color: #000;
+    font-weight:100;
+
+}
+
+#payment .paymentSuccess dd:nth-of-type(2){
+    color:#333;
+    font-size: 14px;
+}
+
+#payment .paymentSuccess ul{
+    height: 44px;
+    width: 940px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc ;
+    text-align: center;
+    margin:0 auto;
+}
+#payment .paymentSuccess ul li{
+    display:inline-block;
+    line-height: 44px;
+}
+
+#payment .paymentSuccess ul li a{
+    color: #87b4d4;
+    font-size: 14px;
+}
+
+#payment .paymentSuccess button{
+    width: 140px;
+    height: 36px;
+    background-color:#f39c11;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 45px;
+    text-align: center;
+    margin-left: 424px;
+    outline: none;
+}
+
+
+/*********************404psd的样式**************************/
+#lose{
+    width:1000px;
+    height:569px;
+}
+#lose .loseContent{
+    height:auto;
+}
+
+#lose .loseLeft{
+    float: left;
+    min-height: 400px;
+    margin-bottom: 140px;
+}
+
+#lose .loseRight{
+
+}
+#lose .loseRight h2{
+    margin-top: 140px;
+    font-size: 44px;
+    line-height: 90px;
+}
+
+#lose .loseRight h2 a{
+    color: red;
+    display: inline-block;
+}
+
+#lose .loseRight  h3{
+    font-size: 18px;
+    color: #5a5a5a;
+    line-height: 50px;
+}
+
+#lose .loseRight p{
+    line-height: 35px;
+    font-size: 14px;
+    color: #000;
+}
+#lose .loseRight p a{
+    color: #1986b7;
+}
+
+#lose .loseRight .tu{
+    display: block;
+    float: left;
+    /*height: 20px;*/
+    vertical-align: top;
+}
+#lose .loseRight .tu img:first-child{
+    vertical-align: -5px;
+}
+
+/*********************popup的样式**************************/
+
+#popup{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#popup .frame {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 2px solid #000;
+    height: 630px;
+    width: 994px;
+}
+
+#popup .frame h2{
+    font-size: 30px;
+    color: #000;
+    padding: 58px 0 60px 85px
+}
+
+/*左边时间*/
+#popup .frame .frameRight{
+    width: 490px;
+}
+#popup .frame .frameRight input{
+    width: 244px;
+    height: 40px;
+    margin: 0 0 20px 85px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#popup .frame .frameRight .inputOne{
+    outline: none;
+    padding-left: 40px;
+    background: url("../images/register/tu_03.jpg") no-repeat center  left;
+}
+
+#popup .frame .frameRight .inputTwo{
+    outline: none;
+    padding-left: 40px;
+    background: url("../images/register/tu_06.jpg") no-repeat center  left;
+}
+
+#popup .frame .frameRight .inputThree{
+    outline: none;
+    padding-left: 40px;
+    background: url("../images/register/tu_10.jpg") no-repeat center  left;
+}
+
+#popup .frame .frameRight .validate{
+    padding-left: 40px;
+    width: 122px;
+    height: 40px;
+
+}
+
+#popup .frame .frameRight img{
+    vertical-align: middle;
+}
+
+#popup .frame .frameRight span a{
+    font-size: 14px;
+    color: #000;
+}
+
+#popup .frame .frameRight .check{
+    width: 14px;
+    height: 14px;
+    display:inline-block;
+}
+
+#popup .frame .frameRight a{
+    font-size: 14px;
+}
+#popup .frame .frameRight button{
+    width: 285px;
+    height: 50px;
+    margin-left: 85px;
+    background-color: #db4f33;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+}
+#popup .frame .frameRight p{
+    line-height:32px;
+    font-size: 14px;
+    color: #666;
+    padding-left: 300px;
+}
+
+
+
+/*右边的样式*/
+#popup .frameLeft h3{
+    font-size: 18px;
+    color: #c12000;
+    line-height: 153px;
+    padding-left: 77px;
+}
+
+#popup .frameLeft p{
+    font-size: 14px;
+    color: #000;
+    line-height: 56px;
+    padding-left: 77px;
+}
+#popup .frameLeft button{
+    width: 143px;
+    height: 35px;
+    background-color: #db4f33;
+    border: 0;
+    margin-left: 77px;
+}
+#popup .frameLeft .label{
+    width: 282px;
+    height: 75px;
+    background-color: #f5f5f5;
+    margin-top: 32px;
+    margin-left: 77px;
+}
+
+#popup .frameLeft .label h4{
+    font-size: 14px;
+    color: #000;
+    line-height: 40px;
+    padding-left: 14px;
+}
+#popup .frameLeft .label img{
+    padding-left: 14px;
+}
+
+/*模态层*/
+.modal{  width:100%; height:100%; background:#000; opacity:.3; position:fixed; top:0; left:0; z-index:10; display:none}
+
+
+/*登录框*/
+.openBtn{ width:100px; height:40px; border:1px solid #ccc; border-radius:5px; display:block; margin:100px auto}
+
+.popBox_logon{width:500px;height:328px; border:3px solid ;border-radius:5px;
+             background:#fff;position:absolute;top:0;left:0; z-index:20; display:none}
+.popBox_logon p{ padding-left:50px; padding-top:20px; line-height: 30px; color: #000; font-size: 14px}
+.popBox_logon h4{height:68px; line-height:68px; text-indent:1em; background:#000;cursor:move;
+                 font-family: 微软雅黑;color: #fff;font-size: 20px}
+.popBox_logon .logonBtn{width:285px; height:50px;background-color: #db4f33; margin-left:38px;border: 0;
+                         font-size: 20px; color: #fff;font-family: 微软雅黑;}
+.popBox_logon .close_btn{width:20px; text-align:center; line-height:20px; height:20px; position:absolute; top:10px; right:8px; color:#fff;}
